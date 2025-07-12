@@ -77,3 +77,5 @@ if __name__ == '__main__':
     threading.Thread(target=lambda: app.run(host='0.0.0.0', port=8080), daemon=True).start()
     updater.start_polling()
     updater.idle()
+    rm .runtime.txt
+    
