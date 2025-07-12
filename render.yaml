@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lv-morning-support-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    pythonVersion: 3.11.8
+    autoDeploy: true
